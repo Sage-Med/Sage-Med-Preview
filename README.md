@@ -92,7 +92,7 @@ Selected results highlight medical visual understanding, report generation and c
 Stage-specific curation draws on **322.7M candidate records before filtering**. Continual pretraining and task-oriented mid-training are followed by three SFT stages for instruction alignment, task diversification and selective refinement, then adaptive reinforcement learning with task-specific rewards and reference replay.
 
 <p align="center">
-  <img src="assets/overview.svg" alt="Sage-Med task coverage, evaluation landscape and progressive training pipeline" width="1000">
+  <img src="assets/overview.png" alt="Sage-Med task coverage, evaluation landscape and progressive training pipeline" width="1000">
 </p>
 
 <p align="center"><a href="assets/overview.pdf">View original PDF</a></p>
