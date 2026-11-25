@@ -6,7 +6,6 @@
 
 <p align="center">
   <b>Scaling Medical Multimodal Intelligence</b><br>
-  35B total parameters · 3B active parameters<br>
   Sage-Med Team · Shanghai Artificial Intelligence Laboratory
 </p>
 
@@ -99,3 +98,7 @@ Stage-specific curation draws on **322.7M candidate records before filtering**. 
 ## Intended Use
 
 Sage-Med-Preview supports medical AI research and development, including medical question answering, image interpretation, report drafting and visual grounding. It is designed to assist researchers and healthcare professionals, with clinical applications requiring professional review and validation in the intended setting.
+
+## Contact
+
+For inquiries, please contact [huming@pjlab.org.cn](mailto:huming@pjlab.org.cn) and [chenyirong@pjlab.org.cn](mailto:chenyirong@pjlab.org.cn).
