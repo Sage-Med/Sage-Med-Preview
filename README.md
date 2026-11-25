@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/sage-med-logo.png" alt="Sage-Med" width="420">
+  <img src="assets/sage-med-logo.svg" alt="Sage-Med" width="420">
 </p>
 
 <h1 align="center">Sage-Med-Preview</h1>
