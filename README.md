@@ -11,8 +11,10 @@
 </p>
 
 <p align="center">
+  🌐 <a href="https://sage-med-preview.github.io/">Website</a> &nbsp; | &nbsp;
+  📄 <a href="Sage_Med_technical_report.pdf">Paper</a> &nbsp; | &nbsp;
   🤗 <a href="https://huggingface.co/Sage-Med/Sage-Med-Preview">Hugging Face</a> &nbsp; | &nbsp;
-  💻 <a href="https://github.com/Sage-Med/Sage-Med-Preview">GitHub</a>
+  🏆 <a href="https://sage-med-preview.github.io/leaderboard.html">Leaderboard</a>
 </p>
 
 ## Introduction
@@ -21,17 +23,16 @@
 
 ## Highlights
 
-- **Medical visual understanding.** An average score of **58.26** across 31 public multimodal benchmarks, with **95.54** accuracy on OmniMedVQA and **59.81** mean accuracy across 15 specialized multimodal benchmarks.
-- **From images to clinical tasks.** Medical VQA, multi-frame interpretation, report drafting and lesion localization across radiology, pathology, ophthalmology, ultrasound and surgical imaging.
-- **Broad evaluation.** **238 clinical tasks · 74 benchmarks · 40+ modalities · 77 comparison models**, including private benchmarks from **14 hospitals and institutions**.
+- **Scaling medical multimodal intelligence.** A systematic exploration at hundred-million-record scale, using curated pools totaling approximately **164M records and 226B tokens**. Training combines continual pretraining, task-oriented mid-training, three-stage supervised fine-tuning (SFT), and difficulty-adaptive reinforcement learning (RL) with task-specific rewards and reference replay.
+- **Strong performance with only 3B active parameters.** With **35B total parameters**, Sage-Med-Preview averages **58.26** across **31 public medical multimodal benchmarks**. This exceeds Hulu-Med-235B-A22B (**50.99**), Intern-S2-Preview (**52.24**), GPT-5.4 (**52.78**) and Claude-Opus-4.6 (**49.18**).
+- **Gains over GPT-6.2-Sol on selected tasks.** Sage-Med-Preview scores **80.05 vs 76.81** on comprehensive multimodal understanding, **33.37 vs 30.31 ROUGE-L** on MIMIC-CXR report generation, and **65.52 vs 62.78 accuracy** on MedFrameQA.
+- **Broad evaluation and clinical transfer.** **238 clinical tasks · 74 benchmarks · 40+ modalities · 77 comparison models**, including private benchmarks from **14 hospitals and institutions**. Across 11 scores from nine held-out private understanding tasks, Sage-Med-Preview ranks first with **57.72**, ahead of runner-up GPT-6.2-Sol (**51.24**).
 
 ## Evaluation
 
 <p align="center">
   <img src="assets/evaluation.svg" alt="Medical benchmark comparisons from the Sage-Med technical report" width="1000">
 </p>
-
-<p align="center"><a href="assets/evaluation.pdf">View original PDF</a></p>
 
 Selected results highlight medical visual understanding, report generation and clinical transfer, alongside four proprietary models and a large medical specialist. **All scores are on a 0-100 scale; bold marks the best result among the models shown.** This is a selection of representative strengths, not a complete benchmark ranking.
 
@@ -94,8 +95,6 @@ Stage-specific curation draws on **322.7M candidate records before filtering**. 
 <p align="center">
   <img src="assets/overview.png" alt="Sage-Med task coverage, evaluation landscape and progressive training pipeline" width="1000">
 </p>
-
-<p align="center"><a href="assets/overview.pdf">View original PDF</a></p>
 
 ## Intended Use
 
