@@ -1,15 +1,3 @@
----
-base_model: internlm/Intern-S2-Preview
-pipeline_tag: image-text-to-text
-tags:
-  - medical
-  - multimodal
-  - medical-vqa
-  - report-generation
-  - visual-grounding
-  - mixture-of-experts
----
-
 <p align="center">
   <img src="assets/sage-med-logo.png" alt="Sage-Med" width="420">
 </p>
@@ -40,10 +28,19 @@ tags:
 ## Evaluation
 
 <p align="center">
-  <img src="assets/evaluation.png" alt="Medical benchmark comparisons from the Sage-Med technical report" width="1000">
+  <img src="assets/evaluation.svg" alt="Medical benchmark comparisons from the Sage-Med technical report" width="1000">
 </p>
 
+<p align="center"><a href="assets/evaluation.pdf">View original PDF</a></p>
+
 Selected results highlight medical visual understanding, report generation and clinical transfer, alongside four proprietary models and a large medical specialist. **All scores are on a 0-100 scale; bold marks the best result among the models shown.** This is a selection of representative strengths, not a complete benchmark ranking.
+
+<p align="center">
+  <a href="assets/benchmark-table.svg"><img src="assets/benchmark-table.svg" alt="Selected benchmark results; the Sage-Med column is highlighted in light blue" width="1180"></a>
+</p>
+
+<details>
+<summary>View table as text</summary>
 
 | Benchmark | Metric ↑ | **Sage-Med**<br>35B-A3B | GPT-6.2<br>Sol | GPT-5.4 | Claude-Opus<br>4.6 | Gemini-2.5<br>Flash | Hulu-Med<br>235B-A22B |
 | :--- | :--- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -84,6 +81,8 @@ Selected results highlight medical visual understanding, report generation and c
 | Ear disease † | Accuracy | **41.40** | 23.00 | 18.25 | 15.35 | 22.30 | 27.95 |
 | Intracranial tumor † | Accuracy | 40.00 | **50.00** | 37.14 | 34.29 | 25.71 | 30.00 |
 
+</details>
+
 † Private benchmarks held out at both institution and case levels. ACC@0.3 measures localization accuracy at IoU > 0.3. The overview figure uses the report's panel-specific benchmark subsets; its report-generation panel includes PET/CT images overlapping with training data. PET/CT is excluded from the table above.
 
 ## Training Overview
@@ -93,8 +92,10 @@ Selected results highlight medical visual understanding, report generation and c
 Stage-specific curation draws on **322.7M candidate records before filtering**. Continual pretraining and task-oriented mid-training are followed by three SFT stages for instruction alignment, task diversification and selective refinement, then adaptive reinforcement learning with task-specific rewards and reference replay.
 
 <p align="center">
-  <img src="assets/overview.png" alt="Sage-Med task coverage, evaluation landscape and progressive training pipeline" width="1000">
+  <img src="assets/overview.svg" alt="Sage-Med task coverage, evaluation landscape and progressive training pipeline" width="1000">
 </p>
+
+<p align="center"><a href="assets/overview.pdf">View original PDF</a></p>
 
 ## Intended Use
 

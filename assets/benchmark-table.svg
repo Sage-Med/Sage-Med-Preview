@@ -1,0 +1,315 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="1428" viewBox="0 0 1180 1428" role="img" aria-labelledby="title desc">
+<title id="title">Sage-Med-Preview selected benchmark results</title>
+<desc id="desc">Thirty benchmark results across six models. The Sage-Med column has a light blue background; bold values mark the highest score in each row.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#243247;font-size:16px}.best{font-weight:700}.group{font-weight:700;font-size:17px;fill:#163a63}.head{font-weight:700;font-size:15px}</style>
+<rect width="1180" height="1428" fill="white"/>
+<rect width="1180" height="72" fill="#f4f7fa"/>
+<rect x="390" width="135" height="1428" fill="#e8f3ff"/>
+<text class="head" x="12" y="33" text-anchor="start">Benchmark</text>
+<text class="head" x="302" y="33" text-anchor="start">Metric ↑</text>
+<text class="head" x="457.5" y="27" text-anchor="middle">Sage-Med</text>
+<text class="head" x="457.5" y="50" text-anchor="middle">35B-A3B</text>
+<text class="head" x="585.0" y="27" text-anchor="middle">GPT-6.2</text>
+<text class="head" x="585.0" y="50" text-anchor="middle">Sol</text>
+<text class="head" x="700.0" y="33" text-anchor="middle">GPT-5.4</text>
+<text class="head" x="827.5" y="27" text-anchor="middle">Claude-Opus</text>
+<text class="head" x="827.5" y="50" text-anchor="middle">4.6</text>
+<text class="head" x="972.5" y="27" text-anchor="middle">Gemini-2.5</text>
+<text class="head" x="972.5" y="50" text-anchor="middle">Flash</text>
+<text class="head" x="1112.5" y="27" text-anchor="middle">Hulu-Med</text>
+<text class="head" x="1112.5" y="50" text-anchor="middle">235B-A22B</text>
+<rect y="72" width="1180" height="36" fill="#f4f7fa"/>
+<rect x="390" y="72" width="135" height="36" fill="#e8f3ff"/>
+<text class="group" x="12" y="96">Multimodal understanding</text>
+<path d="M0 108H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="133" text-anchor="start">OmniMedVQA</text>
+<text class="" x="302" y="133" text-anchor="start">Accuracy</text>
+<text class="best" x="457.5" y="133" text-anchor="middle">95.54</text>
+<text class="" x="585.0" y="133" text-anchor="middle">82.56</text>
+<text class="" x="700.0" y="133" text-anchor="middle">75.90</text>
+<text class="" x="827.5" y="133" text-anchor="middle">78.02</text>
+<text class="" x="972.5" y="133" text-anchor="middle">71.33</text>
+<text class="" x="1112.5" y="133" text-anchor="middle">86.46</text>
+<path d="M0 146H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="171" text-anchor="start">GMAI-MMBench · val</text>
+<text class="" x="302" y="171" text-anchor="start">Accuracy</text>
+<text class="" x="457.5" y="171" text-anchor="middle">70.07</text>
+<text class="best" x="585.0" y="171" text-anchor="middle">74.48</text>
+<text class="" x="700.0" y="171" text-anchor="middle">59.65</text>
+<text class="" x="827.5" y="171" text-anchor="middle">55.60</text>
+<text class="" x="972.5" y="171" text-anchor="middle">59.05</text>
+<text class="" x="1112.5" y="171" text-anchor="middle">62.31</text>
+<path d="M0 184H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="209" text-anchor="start">GMAI-MMBench · test</text>
+<text class="" x="302" y="209" text-anchor="start">Accuracy</text>
+<text class="" x="457.5" y="209" text-anchor="middle">71.26</text>
+<text class="best" x="585.0" y="209" text-anchor="middle">75.26</text>
+<text class="" x="700.0" y="209" text-anchor="middle">60.68</text>
+<text class="" x="827.5" y="209" text-anchor="middle">56.51</text>
+<text class="" x="972.5" y="209" text-anchor="middle">60.63</text>
+<text class="" x="1112.5" y="209" text-anchor="middle">62.60</text>
+<path d="M0 222H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="247" text-anchor="start">VQA-RAD</text>
+<text class="" x="302" y="247" text-anchor="start">Accuracy</text>
+<text class="" x="457.5" y="247" text-anchor="middle">76.50</text>
+<text class="" x="585.0" y="247" text-anchor="middle">79.60</text>
+<text class="" x="700.0" y="247" text-anchor="middle">74.06</text>
+<text class="" x="827.5" y="247" text-anchor="middle">70.07</text>
+<text class="" x="972.5" y="247" text-anchor="middle">67.41</text>
+<text class="best" x="1112.5" y="247" text-anchor="middle">85.59</text>
+<path d="M0 260H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="285" text-anchor="start">SLAKE</text>
+<text class="" x="302" y="285" text-anchor="start">Accuracy</text>
+<text class="best" x="457.5" y="285" text-anchor="middle">88.11</text>
+<text class="" x="585.0" y="285" text-anchor="middle">82.00</text>
+<text class="" x="700.0" y="285" text-anchor="middle">80.37</text>
+<text class="" x="827.5" y="285" text-anchor="middle">75.36</text>
+<text class="" x="972.5" y="285" text-anchor="middle">72.49</text>
+<text class="" x="1112.5" y="285" text-anchor="middle">85.39</text>
+<path d="M0 298H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="323" text-anchor="start">MedFrameQA</text>
+<text class="" x="302" y="323" text-anchor="start">Accuracy</text>
+<text class="best" x="457.5" y="323" text-anchor="middle">65.52</text>
+<text class="" x="585.0" y="323" text-anchor="middle">62.78</text>
+<text class="" x="700.0" y="323" text-anchor="middle">55.63</text>
+<text class="" x="827.5" y="323" text-anchor="middle">58.37</text>
+<text class="" x="972.5" y="323" text-anchor="middle">50.19</text>
+<text class="" x="1112.5" y="323" text-anchor="middle">60.54</text>
+<path d="M0 336H1180" stroke="#dfe6ee" stroke-width="1"/>
+<rect y="336" width="1180" height="36" fill="#f4f7fa"/>
+<rect x="390" y="336" width="135" height="36" fill="#e8f3ff"/>
+<text class="group" x="12" y="360">Specialized visual understanding</text>
+<path d="M0 372H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="397" text-anchor="start">MMOral-OPG-Bench</text>
+<text class="" x="302" y="397" text-anchor="start">Accuracy</text>
+<text class="" x="457.5" y="397" text-anchor="middle">46.87</text>
+<text class="best" x="585.0" y="397" text-anchor="middle">55.57</text>
+<text class="" x="700.0" y="397" text-anchor="middle">43.78</text>
+<text class="" x="827.5" y="397" text-anchor="middle">42.38</text>
+<text class="" x="972.5" y="397" text-anchor="middle">36.58</text>
+<text class="" x="1112.5" y="397" text-anchor="middle">39.66</text>
+<path d="M0 410H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="435" text-anchor="start">Fundus-MMBench</text>
+<text class="" x="302" y="435" text-anchor="start">Accuracy</text>
+<text class="best" x="457.5" y="435" text-anchor="middle">62.74</text>
+<text class="" x="585.0" y="435" text-anchor="middle">61.94</text>
+<text class="" x="700.0" y="435" text-anchor="middle">45.48</text>
+<text class="" x="827.5" y="435" text-anchor="middle">45.16</text>
+<text class="" x="972.5" y="435" text-anchor="middle">40.48</text>
+<text class="" x="1112.5" y="435" text-anchor="middle">57.90</text>
+<path d="M0 448H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="473" text-anchor="start">ChestAgentBench</text>
+<text class="" x="302" y="473" text-anchor="start">Accuracy</text>
+<text class="" x="457.5" y="473" text-anchor="middle">83.72</text>
+<text class="best" x="585.0" y="473" text-anchor="middle">84.92</text>
+<text class="" x="700.0" y="473" text-anchor="middle">73.44</text>
+<text class="" x="827.5" y="473" text-anchor="middle">78.60</text>
+<text class="" x="972.5" y="473" text-anchor="middle">62.08</text>
+<text class="" x="1112.5" y="473" text-anchor="middle">82.56</text>
+<path d="M0 486H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="511" text-anchor="start">MIMIC-EchoQA</text>
+<text class="" x="302" y="511" text-anchor="start">Accuracy</text>
+<text class="" x="457.5" y="511" text-anchor="middle">51.77</text>
+<text class="best" x="585.0" y="511" text-anchor="middle">53.86</text>
+<text class="" x="700.0" y="511" text-anchor="middle">47.75</text>
+<text class="" x="827.5" y="511" text-anchor="middle">29.42</text>
+<text class="" x="972.5" y="511" text-anchor="middle">28.78</text>
+<text class="" x="1112.5" y="511" text-anchor="middle">42.77</text>
+<path d="M0 524H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="549" text-anchor="start">TemMed-Bench</text>
+<text class="" x="302" y="549" text-anchor="start">Accuracy</text>
+<text class="best" x="457.5" y="549" text-anchor="middle">46.55</text>
+<text class="" x="585.0" y="549" text-anchor="middle">40.01</text>
+<text class="" x="700.0" y="549" text-anchor="middle">35.83</text>
+<text class="" x="827.5" y="549" text-anchor="middle">24.96</text>
+<text class="" x="972.5" y="549" text-anchor="middle">31.77</text>
+<text class="" x="1112.5" y="549" text-anchor="middle">36.22</text>
+<path d="M0 562H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="587" text-anchor="start">SMC-LUD</text>
+<text class="" x="302" y="587" text-anchor="start">Accuracy</text>
+<text class="best" x="457.5" y="587" text-anchor="middle">99.81</text>
+<text class="" x="585.0" y="587" text-anchor="middle">72.59</text>
+<text class="" x="700.0" y="587" text-anchor="middle">61.85</text>
+<text class="" x="827.5" y="587" text-anchor="middle">48.89</text>
+<text class="" x="972.5" y="587" text-anchor="middle">54.81</text>
+<text class="" x="1112.5" y="587" text-anchor="middle">53.70</text>
+<path d="M0 600H1180" stroke="#dfe6ee" stroke-width="1"/>
+<rect y="600" width="1180" height="36" fill="#f4f7fa"/>
+<rect x="390" y="600" width="135" height="36" fill="#e8f3ff"/>
+<text class="group" x="12" y="624">Knowledge, reasoning &amp; reliability</text>
+<path d="M0 636H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="661" text-anchor="start">MMMU Pro-Med · 4-option</text>
+<text class="" x="302" y="661" text-anchor="start">Accuracy</text>
+<text class="" x="457.5" y="661" text-anchor="middle">74.48</text>
+<text class="best" x="585.0" y="661" text-anchor="middle">87.76</text>
+<text class="" x="700.0" y="661" text-anchor="middle">68.18</text>
+<text class="" x="827.5" y="661" text-anchor="middle">72.73</text>
+<text class="" x="972.5" y="661" text-anchor="middle">72.03</text>
+<text class="" x="1112.5" y="661" text-anchor="middle">56.64</text>
+<path d="M0 674H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="699" text-anchor="start">MMLU-Pro-Med</text>
+<text class="" x="302" y="699" text-anchor="start">Accuracy</text>
+<text class="" x="457.5" y="699" text-anchor="middle">80.07</text>
+<text class="best" x="585.0" y="699" text-anchor="middle">84.35</text>
+<text class="" x="700.0" y="699" text-anchor="middle">79.71</text>
+<text class="" x="827.5" y="699" text-anchor="middle">84.11</text>
+<text class="" x="972.5" y="699" text-anchor="middle">78.00</text>
+<text class="" x="1112.5" y="699" text-anchor="middle">73.72</text>
+<path d="M0 712H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="737" text-anchor="start">SuperGPQA-Med</text>
+<text class="" x="302" y="737" text-anchor="start">Accuracy</text>
+<text class="" x="457.5" y="737" text-anchor="middle">59.35</text>
+<text class="best" x="585.0" y="737" text-anchor="middle">72.30</text>
+<text class="" x="700.0" y="737" text-anchor="middle">56.19</text>
+<text class="" x="827.5" y="737" text-anchor="middle">67.51</text>
+<text class="" x="972.5" y="737" text-anchor="middle">54.30</text>
+<text class="" x="1112.5" y="737" text-anchor="middle">49.95</text>
+<path d="M0 750H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="775" text-anchor="start">ClinHallu</text>
+<text class="" x="302" y="775" text-anchor="start">Accuracy</text>
+<text class="" x="457.5" y="775" text-anchor="middle">77.48</text>
+<text class="best" x="585.0" y="775" text-anchor="middle">86.29</text>
+<text class="" x="700.0" y="775" text-anchor="middle">75.90</text>
+<text class="" x="827.5" y="775" text-anchor="middle">76.20</text>
+<text class="" x="972.5" y="775" text-anchor="middle">71.63</text>
+<text class="" x="1112.5" y="775" text-anchor="middle">61.75</text>
+<path d="M0 788H1180" stroke="#dfe6ee" stroke-width="1"/>
+<rect y="788" width="1180" height="36" fill="#f4f7fa"/>
+<rect x="390" y="788" width="135" height="36" fill="#e8f3ff"/>
+<text class="group" x="12" y="812">Report generation</text>
+<path d="M0 824H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="849" text-anchor="start">MIMIC-CXR</text>
+<text class="" x="302" y="849" text-anchor="start">ROUGE-L</text>
+<text class="best" x="457.5" y="849" text-anchor="middle">33.37</text>
+<text class="" x="585.0" y="849" text-anchor="middle">30.31</text>
+<text class="" x="700.0" y="849" text-anchor="middle">26.35</text>
+<text class="" x="827.5" y="849" text-anchor="middle">18.74</text>
+<text class="" x="972.5" y="849" text-anchor="middle">23.51</text>
+<text class="" x="1112.5" y="849" text-anchor="middle">29.56</text>
+<path d="M0 862H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="887" text-anchor="start">CheXpert Plus</text>
+<text class="" x="302" y="887" text-anchor="start">RaTEScore</text>
+<text class="best" x="457.5" y="887" text-anchor="middle">53.20</text>
+<text class="" x="585.0" y="887" text-anchor="middle">50.82</text>
+<text class="" x="700.0" y="887" text-anchor="middle">50.79</text>
+<text class="" x="827.5" y="887" text-anchor="middle">47.10</text>
+<text class="" x="972.5" y="887" text-anchor="middle">45.47</text>
+<text class="" x="1112.5" y="887" text-anchor="middle">49.15</text>
+<path d="M0 900H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="925" text-anchor="start">Lung-Cancer CT †</text>
+<text class="" x="302" y="925" text-anchor="start">RaTEScore</text>
+<text class="" x="457.5" y="925" text-anchor="middle">66.52</text>
+<text class="" x="585.0" y="925" text-anchor="middle">58.80</text>
+<text class="" x="700.0" y="925" text-anchor="middle">64.32</text>
+<text class="" x="827.5" y="925" text-anchor="middle">58.56</text>
+<text class="best" x="972.5" y="925" text-anchor="middle">67.17</text>
+<text class="" x="1112.5" y="925" text-anchor="middle">66.13</text>
+<path d="M0 938H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="963" text-anchor="start">Intraoral †</text>
+<text class="" x="302" y="963" text-anchor="start">ROUGE-L</text>
+<text class="best" x="457.5" y="963" text-anchor="middle">28.59</text>
+<text class="" x="585.0" y="963" text-anchor="middle">25.20</text>
+<text class="" x="700.0" y="963" text-anchor="middle">14.67</text>
+<text class="" x="827.5" y="963" text-anchor="middle">16.06</text>
+<text class="" x="972.5" y="963" text-anchor="middle">16.86</text>
+<text class="" x="1112.5" y="963" text-anchor="middle">25.49</text>
+<path d="M0 976H1180" stroke="#dfe6ee" stroke-width="1"/>
+<rect y="976" width="1180" height="36" fill="#f4f7fa"/>
+<rect x="390" y="976" width="135" height="36" fill="#e8f3ff"/>
+<text class="group" x="12" y="1000">Visual grounding</text>
+<path d="M0 1012H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="1037" text-anchor="start">MedSG-Bench</text>
+<text class="" x="302" y="1037" text-anchor="start">mIoU</text>
+<text class="" x="457.5" y="1037" text-anchor="middle">31.73</text>
+<text class="best" x="585.0" y="1037" text-anchor="middle">58.83</text>
+<text class="" x="700.0" y="1037" text-anchor="middle">0.23</text>
+<text class="" x="827.5" y="1037" text-anchor="middle">0.46</text>
+<text class="" x="972.5" y="1037" text-anchor="middle">17.65</text>
+<text class="" x="1112.5" y="1037" text-anchor="middle">0.07</text>
+<path d="M0 1050H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="1075" text-anchor="start">Pneumonia †</text>
+<text class="" x="302" y="1075" text-anchor="start">mIoU</text>
+<text class="" x="457.5" y="1075" text-anchor="middle">44.18</text>
+<text class="best" x="585.0" y="1075" text-anchor="middle">44.19</text>
+<text class="" x="700.0" y="1075" text-anchor="middle">26.78</text>
+<text class="" x="827.5" y="1075" text-anchor="middle">33.86</text>
+<text class="" x="972.5" y="1075" text-anchor="middle">19.11</text>
+<text class="" x="1112.5" y="1075" text-anchor="middle">3.06</text>
+<path d="M0 1088H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="1113" text-anchor="start">Surgical attention †</text>
+<text class="" x="302" y="1113" text-anchor="start">ACC@0.3</text>
+<text class="best" x="457.5" y="1113" text-anchor="middle">78.85</text>
+<text class="" x="585.0" y="1113" text-anchor="middle">42.25</text>
+<text class="" x="700.0" y="1113" text-anchor="middle">58.90</text>
+<text class="" x="827.5" y="1113" text-anchor="middle">52.70</text>
+<text class="" x="972.5" y="1113" text-anchor="middle">43.25</text>
+<text class="" x="1112.5" y="1113" text-anchor="middle">5.20</text>
+<path d="M0 1126H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="1151" text-anchor="start">Surgical attention †</text>
+<text class="" x="302" y="1151" text-anchor="start">mIoU</text>
+<text class="best" x="457.5" y="1151" text-anchor="middle">48.50</text>
+<text class="" x="585.0" y="1151" text-anchor="middle">28.34</text>
+<text class="" x="700.0" y="1151" text-anchor="middle">35.06</text>
+<text class="" x="827.5" y="1151" text-anchor="middle">31.85</text>
+<text class="" x="972.5" y="1151" text-anchor="middle">28.68</text>
+<text class="" x="1112.5" y="1151" text-anchor="middle">4.54</text>
+<path d="M0 1164H1180" stroke="#dfe6ee" stroke-width="1"/>
+<rect y="1164" width="1180" height="36" fill="#f4f7fa"/>
+<rect x="390" y="1164" width="135" height="36" fill="#e8f3ff"/>
+<text class="group" x="12" y="1188">Held-out clinical understanding</text>
+<path d="M0 1200H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="1225" text-anchor="start">Melanoma metastasis †</text>
+<text class="" x="302" y="1225" text-anchor="start">Accuracy</text>
+<text class="best" x="457.5" y="1225" text-anchor="middle">76.80</text>
+<text class="" x="585.0" y="1225" text-anchor="middle">75.26</text>
+<text class="" x="700.0" y="1225" text-anchor="middle">59.79</text>
+<text class="" x="827.5" y="1225" text-anchor="middle">71.91</text>
+<text class="" x="972.5" y="1225" text-anchor="middle">19.33</text>
+<text class="" x="1112.5" y="1225" text-anchor="middle">64.43</text>
+<path d="M0 1238H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="1263" text-anchor="start">Fundus classification †</text>
+<text class="" x="302" y="1263" text-anchor="start">Accuracy</text>
+<text class="" x="457.5" y="1263" text-anchor="middle">70.70</text>
+<text class="best" x="585.0" y="1263" text-anchor="middle">75.09</text>
+<text class="" x="700.0" y="1263" text-anchor="middle">57.14</text>
+<text class="" x="827.5" y="1263" text-anchor="middle">55.68</text>
+<text class="" x="972.5" y="1263" text-anchor="middle">40.66</text>
+<text class="" x="1112.5" y="1263" text-anchor="middle">74.36</text>
+<path d="M0 1276H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="1301" text-anchor="start">NPC · patient-level †</text>
+<text class="" x="302" y="1301" text-anchor="start">Accuracy</text>
+<text class="best" x="457.5" y="1301" text-anchor="middle">49.18</text>
+<text class="" x="585.0" y="1301" text-anchor="middle">43.44</text>
+<text class="" x="700.0" y="1301" text-anchor="middle">27.87</text>
+<text class="" x="827.5" y="1301" text-anchor="middle">27.87</text>
+<text class="" x="972.5" y="1301" text-anchor="middle">28.69</text>
+<text class="" x="1112.5" y="1301" text-anchor="middle">27.87</text>
+<path d="M0 1314H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="1339" text-anchor="start">NPC · slice-level †</text>
+<text class="" x="302" y="1339" text-anchor="start">Accuracy</text>
+<text class="best" x="457.5" y="1339" text-anchor="middle">62.70</text>
+<text class="" x="585.0" y="1339" text-anchor="middle">57.79</text>
+<text class="" x="700.0" y="1339" text-anchor="middle">44.59</text>
+<text class="" x="827.5" y="1339" text-anchor="middle">19.02</text>
+<text class="" x="972.5" y="1339" text-anchor="middle">28.28</text>
+<text class="" x="1112.5" y="1339" text-anchor="middle">51.97</text>
+<path d="M0 1352H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="1377" text-anchor="start">Ear disease †</text>
+<text class="" x="302" y="1377" text-anchor="start">Accuracy</text>
+<text class="best" x="457.5" y="1377" text-anchor="middle">41.40</text>
+<text class="" x="585.0" y="1377" text-anchor="middle">23.00</text>
+<text class="" x="700.0" y="1377" text-anchor="middle">18.25</text>
+<text class="" x="827.5" y="1377" text-anchor="middle">15.35</text>
+<text class="" x="972.5" y="1377" text-anchor="middle">22.30</text>
+<text class="" x="1112.5" y="1377" text-anchor="middle">27.95</text>
+<path d="M0 1390H1180" stroke="#dfe6ee" stroke-width="1"/>
+<text class="" x="12" y="1415" text-anchor="start">Intracranial tumor †</text>
+<text class="" x="302" y="1415" text-anchor="start">Accuracy</text>
+<text class="" x="457.5" y="1415" text-anchor="middle">40.00</text>
+<text class="best" x="585.0" y="1415" text-anchor="middle">50.00</text>
+<text class="" x="700.0" y="1415" text-anchor="middle">37.14</text>
+<text class="" x="827.5" y="1415" text-anchor="middle">34.29</text>
+<text class="" x="972.5" y="1415" text-anchor="middle">25.71</text>
+<text class="" x="1112.5" y="1415" text-anchor="middle">30.00</text>
+<path d="M0 1428H1180" stroke="#dfe6ee" stroke-width="1"/>
+</svg>
