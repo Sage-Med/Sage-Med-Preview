@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1180" height="1428" viewBox="0 0 1180 1428" role="img" aria-labelledby="title desc">
-<title id="title">Sage-Med-Preview selected benchmark results</title>
+<title id="title">Sage-Med-Preview benchmark results</title>
 <desc id="desc">Thirty benchmark results across six models. The Sage-Med column has a light blue background; bold values mark the highest score in each row.</desc>
 <style>text{font-family:Arial,Helvetica,sans-serif;fill:#243247;font-size:16px}.best{font-weight:700}.group{font-weight:700;font-size:17px;fill:#163a63}.head{font-weight:700;font-size:15px}</style>
 <rect width="1180" height="1428" fill="white"/>

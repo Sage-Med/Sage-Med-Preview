@@ -34,10 +34,10 @@
   <img src="assets/evaluation.svg" alt="Medical benchmark comparisons from the Sage-Med technical report" width="1000">
 </p>
 
-Selected results highlight medical visual understanding, report generation and clinical transfer, alongside four proprietary models and a large medical specialist. **All scores are on a 0-100 scale; bold marks the best result among the models shown.** This is a selection of representative strengths, not a complete benchmark ranking.
+The table compares Sage-Med-Preview with four proprietary models and Hulu-Med-235B-A22B across medical understanding, report generation, visual grounding and clinical transfer. **Scores are on a 0-100 scale; bold marks the highest score in each row.**
 
 <p align="center">
-  <a href="assets/benchmark-table.svg"><img src="assets/benchmark-table.svg" alt="Selected benchmark results; the Sage-Med column is highlighted in light blue" width="1180"></a>
+  <a href="assets/benchmark-table.svg"><img src="assets/benchmark-table.svg" alt="Medical benchmark results; the Sage-Med column is highlighted in light blue" width="1180"></a>
 </p>
 
 <details>
@@ -84,7 +84,7 @@ Selected results highlight medical visual understanding, report generation and c
 
 </details>
 
-† Private benchmarks held out at both institution and case levels. ACC@0.3 measures localization accuracy at IoU > 0.3. The overview figure uses the report's panel-specific benchmark subsets; its report-generation panel includes PET/CT images overlapping with training data. PET/CT is excluded from the table above.
+† Private benchmarks held out at both institution and case levels. ACC@0.3 measures localization accuracy at IoU > 0.3. The evaluation figure follows the report's panel definitions. Its report-generation panel includes PET/CT images overlapping with training data. PET/CT is excluded from the table above.
 
 ## Training Overview
 
