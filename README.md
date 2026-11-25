@@ -25,7 +25,7 @@
 
 - **Scaling medical multimodal intelligence.** A systematic exploration at hundred-million-record scale, using curated pools totaling approximately **164M records and 226B tokens**. Training combines continual pretraining, task-oriented mid-training, three-stage supervised fine-tuning (SFT), and difficulty-adaptive reinforcement learning (RL) with task-specific rewards and reference replay.
 - **Strong performance with only 3B active parameters.** With **35B total parameters**, Sage-Med-Preview averages **58.26** across **31 public medical multimodal benchmarks**. This exceeds Hulu-Med-235B-A22B (**50.99**), Intern-S2-Preview (**52.24**), GPT-5.4 (**52.78**) and Claude-Opus-4.6 (**49.18**).
-- **Gains over GPT-6.2-Sol on selected tasks.** Sage-Med-Preview scores **80.05 vs 76.81** on comprehensive multimodal understanding, **33.37 vs 30.31 ROUGE-L** on MIMIC-CXR report generation, and **65.52 vs 62.78 accuracy** on MedFrameQA.
+- **Strong medical understanding and report generation.** Sage-Med-Preview outperforms GPT-6.2-Sol on comprehensive multimodal understanding (**80.05 vs 76.81**), MIMIC-CXR report generation (**33.37 vs 30.31 ROUGE-L**), and MedFrameQA (**65.52 vs 62.78 accuracy**).
 - **Broad evaluation and clinical transfer.** **238 clinical tasks · 74 benchmarks · 40+ modalities · 77 comparison models**, including private benchmarks from **14 hospitals and institutions**. Across 11 scores from nine held-out private understanding tasks, Sage-Med-Preview ranks first with **57.72**, ahead of runner-up GPT-6.2-Sol (**51.24**).
 
 ## Evaluation
