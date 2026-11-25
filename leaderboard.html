@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore Sage-Med benchmark results and compare model configurations across public and private medical evaluations.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Leaderboard · Sage-Med</title>
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/leaderboard.css">
+  <script src="assets/results.js" defer></script>
+  <script src="assets/leaderboard.js" defer></script>
+</head>
+<body class="lb-page">
+  <a class="lb-skip" href="#board">Skip to results</a>
+  <header class="masthead">
+    <div class="wrap mast-inner">
+      <a class="wordmark" href="index.html" aria-label="Sage-Med home"><img src="assets/Sage-Med-original-style_cropped.svg" width="141" height="35" alt="Sage-Med"></a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html#overview">Overview</a>
+        <a href="index.html#training">Training</a>
+        <a href="index.html#evaluation">Evaluation</a>
+        <a href="leaderboard.html" aria-current="page">Leaderboard</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap lb-main">
+    <section class="lb-intro" aria-labelledby="page-title">
+      <div><h1 id="page-title">Leaderboard</h1><p>Compare model performance across public and private medical benchmarks.</p></div>
+      <dl class="lb-totals">
+        <div>
+          <dt title="Distinct comparison model and size combinations">Comparison models</dt>
+          <dd><span class="lb-total-value" id="model-total">—</span><small class="lb-total-note">plus Sage-Med-Preview</small></dd>
+        </div>
+        <div>
+          <dt>Scores</dt>
+          <dd><span class="lb-total-value" id="score-total">—</span></dd>
+        </div>
+      </dl>
+    </section>
+    <noscript><p>Enable JavaScript to filter and sort the benchmark results. <a href="index.html#evaluation">Read the evaluation summary.</a></p></noscript>
+    <div class="lb-workbench" id="board" role="region" aria-label="Benchmark explorer" tabindex="-1">
+      <aside class="lb-sidebar" aria-label="Benchmark index">
+        <h2>Benchmarks</h2>
+        <label class="lb-search"><span class="lb-sr">Find a benchmark</span><i aria-hidden="true"></i><input type="search" id="bench-search" placeholder="Find a benchmark" autocomplete="off"></label>
+        <div id="lb-index" class="lb-index"></div>
+        <label class="lb-mobile-picker" for="view-picker">Select a benchmark view<select id="view-picker"></select></label>
+      </aside>
+      <section class="lb-results" aria-labelledby="view-title">
+        <div class="lb-view-head">
+          <div><div class="lb-kicker" id="scope-tag"></div><h2 id="view-title"></h2></div>
+          <button class="lb-fullscreen" id="toggle-screen" type="button" aria-controls="board" aria-pressed="false"><span class="lb-expand-icon" aria-hidden="true"></span><span id="screen-label">Full screen</span></button>
+        </div>
+        <div id="view-panel">
+          <div class="lb-controls">
+            <label class="lb-search lb-model"><i aria-hidden="true"></i><span class="lb-sr">Search by model name or size</span><input type="search" id="model-search" placeholder="Search models or sizes" autocomplete="off"></label>
+            <label class="lb-family"><span class="lb-sr">Model family</span><select id="family-select"></select></label>
+            <button id="order-reset" type="button">Group by family</button>
+          </div>
+          <div class="lb-table-note"><span id="row-summary" role="status" aria-live="polite"></span><span>Select a metric to sort <span aria-hidden="true">↕</span></span></div>
+          <div class="lb-spill" tabindex="0" role="region" aria-label="Model scores. Scroll horizontally for more metrics.">
+            <table class="lb-table"><caption class="lb-sr" id="table-caption"></caption><thead id="cols"></thead><tbody id="scores"></tbody></table>
+          </div>
+          <div id="no-models" class="lb-empty" hidden><b>No matching models</b><button id="clear-models" type="button">Clear model filters</button></div>
+          <p class="lb-legend"><b>Bold</b> marks the best score and <u>underlining</u> marks the second best for a metric. A dash indicates an unavailable score.</p>
+        </div>
+        <div id="no-views" class="lb-empty" hidden><b>Try a different benchmark name.</b><button id="clear-bench" type="button">Show all benchmarks</button></div>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-contact"><strong>Contact us</strong><a href="mailto:huming@pjlab.org.cn">huming@pjlab.org.cn</a></div>
+    <div class="footer-credit"><strong>Sage-Med Team</strong><span>Shanghai Artificial Intelligence Laboratory</span></div>
+  </div>
+</footer>
+</body>
+</html>
