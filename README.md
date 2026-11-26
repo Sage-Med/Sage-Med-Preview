@@ -27,6 +27,87 @@
 - **Strong medical understanding and report generation.** Sage-Med-Preview outperforms GPT-6.2-Sol on comprehensive multimodal understanding (**80.05 vs 76.81**), MIMIC-CXR report generation (**33.37 vs 30.31 ROUGE-L**), and MedFrameQA (**65.52 vs 62.78 accuracy**).
 - **Broad evaluation and clinical transfer.** **238 clinical tasks · 74 benchmarks · 40+ modalities · 77 comparison models**, including private benchmarks from **14 hospitals and institutions**. Across 11 scores from nine held-out private understanding tasks, Sage-Med-Preview ranks first with **57.72**, ahead of runner-up GPT-6.2-Sol (**51.24**).
 
+## Inference with vLLM
+
+### Environment preparation
+
+The evaluation used vLLM-Ascend on Ascend 910C. For CUDA deployment, install vLLM 0.23.0, which supports the Intern-S2-Preview architecture. The server example uses two GPUs and loads the 131 GiB checkpoint in BF16. See the [vLLM installation guide](https://docs.vllm.ai/en/v0.23.0/getting_started/installation/gpu/) for platform requirements.
+
+```bash
+pip install uv
+uv venv --python 3.12 ~/.venvs/sage-med-vllm
+source ~/.venvs/sage-med-vllm/bin/activate
+uv pip install "vllm==0.23.0" --torch-backend=auto
+```
+
+### Run inference
+
+#### Server
+
+The server loads the weights from [Hugging Face](https://huggingface.co/Sage-Med/Sage-Med-Preview) by default. Set `MODEL_PATH` to the local directory containing `config.json` and the weight shards to serve a local copy.
+
+```bash
+MODEL_PATH="${MODEL_PATH:-Sage-Med/Sage-Med-Preview}"
+PORT="${PORT:-8000}"
+
+vllm serve "$MODEL_PATH" \
+    --host 127.0.0.1 \
+    --port "$PORT" \
+    --trust-remote-code \
+    --served-model-name sage-med-preview \
+    --dtype bfloat16 \
+    --tensor-parallel-size 2 \
+    --gpu-memory-utilization 0.85 \
+    --max-model-len 262144 \
+    --max-num-seqs 64 \
+    --max-num-batched-tokens 4096 \
+    --generation-config vllm \
+    --no-enable-prefix-caching \
+    --enforce-eager \
+    --default-chat-template-kwargs '{"enable_thinking":false}'
+```
+
+#### Client
+
+This example sends an image and a text prompt and streams the response.
+
+```bash
+BASE_URL="${BASE_URL:-http://127.0.0.1:8000}"
+
+curl --fail-with-body --silent --show-error --no-buffer \
+    "$BASE_URL/v1/chat/completions" \
+    -H 'Content-Type: application/json' \
+    --data-binary @- <<'JSON'
+{
+  "model": "sage-med-preview",
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "https://storage.googleapis.com/hai-cd3-foundations-public-vault-entry/med_gemma/colab_example/cxr/chest_xray_pa_3-8-2010.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Describe the visible findings in this chest radiograph."
+        }
+      ]
+    }
+  ],
+  "chat_template_kwargs": {"enable_thinking": false},
+  "max_tokens": 2048,
+  "temperature": 0.01,
+  "top_p": 1.0,
+  "top_k": -1,
+  "repetition_penalty": 1.0,
+  "stream": true
+}
+JSON
+```
+
 ## Evaluation
 
 <p align="center">
