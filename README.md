@@ -184,6 +184,23 @@ Stage-specific curation draws on **322.7M candidate records before filtering**. 
 
 Sage-Med-Preview supports medical AI research and development, including medical question answering, image interpretation, report drafting and visual grounding. It is designed to assist researchers and healthcare professionals, with clinical applications requiring professional review and validation in the intended setting.
 
+## Citation
+
+If you find Sage-Med-Preview useful in your research, please consider citing our paper:
+
+```bibtex
+@misc{medteam2026sagemed,
+    title={Sage-Med: Scaling Medical Multimodal Intelligence},
+    author={{Med Team} and Hu, Ming and Tang, Cheng and Li, Wei and others},
+    year={2026},
+    eprint={2611.34575},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV},
+    url={https://arxiv.org/abs/2611.34575}
+}
+```
+
+
 ## Contact
 
 For inquiries, please contact [huming@pjlab.org.cn](mailto:huming@pjlab.org.cn) and [chenyirong@pjlab.org.cn](mailto:chenyirong@pjlab.org.cn).
