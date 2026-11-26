@@ -189,7 +189,7 @@ Sage-Med-Preview supports medical AI research and development, including medical
 If you find Sage-Med-Preview useful in your research, please consider citing our paper:
 
 ```bibtex
-@misc{medteam2026sagemed,
+@misc{sagemed2026,
     title={Sage-Med: Scaling Medical Multimodal Intelligence},
     author={{Med Team} and Hu, Ming and Tang, Cheng and Li, Wei and others},
     year={2026},
