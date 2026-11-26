@@ -11,7 +11,7 @@
 
 <p align="center">
   🌐 <a href="https://sage-med-preview.github.io/">Website</a> &nbsp; | &nbsp;
-  📄 <a href="Sage_Med_technical_report.pdf">Paper</a> &nbsp; | &nbsp;
+  📄 <a href="https://arxiv.org/abs/2611.34575">Paper</a> &nbsp; | &nbsp;
   🤗 <a href="https://huggingface.co/Sage-Med/Sage-Med-Preview">Hugging Face</a> &nbsp; | &nbsp;
   🏆 <a href="https://sage-med-preview.github.io/leaderboard.html">Leaderboard</a>
 </p>
