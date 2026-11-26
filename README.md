@@ -31,24 +31,27 @@
 
 ### Environment preparation
 
-The evaluation used vLLM-Ascend on Ascend 910C. For CUDA deployment, install vLLM 0.23.0, which supports the Intern-S2-Preview architecture. The server example uses two GPUs and loads the 131 GiB checkpoint in BF16. See the [vLLM installation guide](https://docs.vllm.ai/en/v0.23.0/getting_started/installation/gpu/) for platform requirements.
+This setup was tested on a single NVIDIA H200 with BF16 and a 32,768-token context. Use an x86-64 Linux host with a CUDA 12.9-compatible NVIDIA driver. The [environment file](requirements-h200.txt) pins the CUDA 12.9 builds of vLLM and PyTorch.
 
 ```bash
 pip install uv
 uv venv --python 3.12 ~/.venvs/sage-med-vllm
 source ~/.venvs/sage-med-vllm/bin/activate
-uv pip install "vllm==0.23.0" --torch-backend=auto
+curl -fsSL https://huggingface.co/Sage-Med/Sage-Med-Preview/resolve/main/requirements-h200.txt -o requirements-h200.txt
+uv pip install --torch-backend=cu129 -r requirements-h200.txt
+vllm download-kernels
 ```
 
 ### Run inference
 
 #### Server
 
-The server loads the weights from [Hugging Face](https://huggingface.co/Sage-Med/Sage-Med-Preview) by default. Set `MODEL_PATH` to the local directory containing `config.json` and the weight shards to serve a local copy.
+The first launch downloads about 131 GiB of model files from [Hugging Face](https://huggingface.co/Sage-Med/Sage-Med-Preview). Set `MODEL_PATH` to a local directory containing `config.json` and the weight shards to serve an existing copy.
 
 ```bash
 MODEL_PATH="${MODEL_PATH:-Sage-Med/Sage-Med-Preview}"
 PORT="${PORT:-8000}"
+export VLLM_USE_FLASHINFER_SAMPLER=0
 
 vllm serve "$MODEL_PATH" \
     --host 127.0.0.1 \
@@ -56,11 +59,12 @@ vllm serve "$MODEL_PATH" \
     --trust-remote-code \
     --served-model-name sage-med-preview \
     --dtype bfloat16 \
-    --tensor-parallel-size 2 \
+    --tensor-parallel-size 1 \
     --gpu-memory-utilization 0.85 \
-    --max-model-len 262144 \
-    --max-num-seqs 64 \
+    --max-model-len 32768 \
+    --max-num-seqs 8 \
     --max-num-batched-tokens 4096 \
+    --limit-mm-per-prompt '{"image":1,"video":0}' \
     --generation-config vllm \
     --no-enable-prefix-caching \
     --enforce-eager \
