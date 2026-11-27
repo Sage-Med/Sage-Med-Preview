@@ -12,7 +12,7 @@
 <p align="center">
   🌐 <a href="https://sage-med-preview.github.io/">Website</a> &nbsp; | &nbsp;
   📄 <a href="https://arxiv.org/abs/2611.34575">Paper</a> &nbsp; | &nbsp;
-  🤗 <a href="https://huggingface.co/Sage-Med/Sage-Med-Preview">Hugging Face</a> &nbsp; | &nbsp;
+  🤗 <a href="https://huggingface.co/internlm/Sage-Med-Preview">Hugging Face</a> &nbsp; | &nbsp;
   🏆 <a href="https://sage-med-preview.github.io/leaderboard.html">Leaderboard</a>
 </p>
 
@@ -37,7 +37,7 @@ This setup was tested on a single NVIDIA H200 with BF16 and a 32,768-token conte
 pip install uv
 uv venv --python 3.12 ~/.venvs/sage-med-vllm
 source ~/.venvs/sage-med-vllm/bin/activate
-curl -fsSL https://huggingface.co/Sage-Med/Sage-Med-Preview/resolve/main/requirements-h200.txt -o requirements-h200.txt
+curl -fsSL https://huggingface.co/internlm/Sage-Med-Preview/resolve/main/requirements-h200.txt -o requirements-h200.txt
 uv pip install --torch-backend=cu129 -r requirements-h200.txt
 vllm download-kernels
 ```
@@ -46,10 +46,10 @@ vllm download-kernels
 
 #### Server
 
-The first launch downloads about 131 GiB of model files from [Hugging Face](https://huggingface.co/Sage-Med/Sage-Med-Preview). Set `MODEL_PATH` to a local directory containing `config.json` and the weight shards to serve an existing copy.
+The first launch downloads about 131 GiB of model files from [Hugging Face](https://huggingface.co/internlm/Sage-Med-Preview). Set `MODEL_PATH` to a local directory containing `config.json` and the weight shards to serve an existing copy.
 
 ```bash
-MODEL_PATH="${MODEL_PATH:-Sage-Med/Sage-Med-Preview}"
+MODEL_PATH="${MODEL_PATH:-internlm/Sage-Med-Preview}"
 PORT="${PORT:-8000}"
 export VLLM_USE_FLASHINFER_SAMPLER=0
 
